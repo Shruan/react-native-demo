@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import Index from './pages/index.js'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -25,7 +26,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native!111
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
@@ -33,6 +34,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Index />
       </View>
     );
   }
@@ -44,6 +46,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    display: 'flex',
+    flexDirection: 'column'
   },
   welcome: {
     fontSize: 20,
