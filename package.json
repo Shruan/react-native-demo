@@ -1,14 +1,20 @@
 {
   "name": "ReactNativeDemo",
   "version": "0.0.1",
+  "description": "A react-native project for web development",
+  "author": "Shruan",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "web": "react-scripts start"
   },
   "dependencies": {
     "react": "^16.3.0-alpha.1",
-    "react-native": "0.54.2"
+    "react-native": "0.54.2",
+    "react-dom": "^16.2.0",
+    "react-native-web": "^0.5.3",
+    "react-scripts": "^1.1.1"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
