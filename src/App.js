@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import Index from './pages/index.js'
+import { NativeRouter, Route, Link } from 'react-router-native'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,18 +25,20 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!111
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-        <Index />
-      </View>
+      <NativeRouter>
+        <View style={styles.container}>
+          <Text style={styles.welcome}>
+            Welcome to React Native!111
+          </Text>
+          <Text style={styles.instructions}>
+            To get started, edit App.js
+          </Text>
+          <Text style={styles.instructions}>
+            {instructions}
+          </Text>
+          <Index />
+        </View>
+      </NativeRouter>
     );
   }
 }
